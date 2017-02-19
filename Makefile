@@ -12,7 +12,6 @@ ARCH := $(shell ciparser get arch)
 # Musl
 MUSL := $(shell ciparser get musl)
 
-
 # Upx
 UPX := $(shell ciparser get upx)
 

@@ -1,0 +1,17 @@
+name: graybot
+civersion: 1
+
+build:
+    active: true
+    output: graybot
+    language: go
+    goversion: 1.7.1
+    arch: amd64
+    platform: linux
+    musl: true
+    upx: true
+    deps:
+      - "github.com/urfave/cli"
+      - "github.com/ghodss/yaml"
+      - "gopkg.in/gemnasium/logrus-graylog-hook.v2"
+      - "github.com/dreh23/nicename"
