@@ -26,6 +26,7 @@ func registerFlags(app *cli.App) {
 		cli.StringFlag{
 			Name:        "g, logserver",
 			Usage:       "Graylog server URL", //Schema: 192.168.11.29:13001
+			EnvVar:      "GRAYBOT_SERVER_URL",
 			Destination: &GraylogURL,
 		},
 		cli.BoolFlag{
